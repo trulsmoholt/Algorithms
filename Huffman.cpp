@@ -12,9 +12,6 @@ public:
 
 	Node(const Node* left, const Node* right) : _left(left), _right(right), _probability(left->_probability+right->_probability), _symbol(NULL) {};
 	Node(const char symbol, float probability) : _symbol(symbol), _probability(probability),_left(nullptr),_right(nullptr) {};
-	const Node* getRight() {
-		return _right;
-	}
 };
 
 class Compare {
